@@ -10,7 +10,7 @@ sudo -u postgres $POSTGRES_BIN/createdb -E UTF-8 -T template0 --lc-collate=en_US
 export CANVAS_LMS_ADMIN_EMAIL="canvas@example.edu"
 export CANVAS_LMS_ADMIN_PASSWORD="canvas-docker"
 export CANVAS_LMS_ACCOUNT_NAME="Canvas Docker"
-export CANVAS_LMS_STATS_COLLECTION="opt_out"
+export CANVAS_LMS_STATS_COLLECTION="opt_in"
 
 cd /opt/canvas/canvas-lms \
     && $GEM_HOME/bin/bundle exec rake db:initial_setup
